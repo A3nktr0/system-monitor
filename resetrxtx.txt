@@ -1,0 +1,6 @@
+ethtool -i eth0 -> keep driver ref
+
+sudo ifconfig eth0 down
+sudo modprobe -r driver ref
+sudo modprobe driver ref
+sudo ifconfig eth0 up
